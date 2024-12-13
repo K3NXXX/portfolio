@@ -1,13 +1,13 @@
 import { navItemType } from "../../../../lists/navList";
 import style from "./NavItem.module.scss"
 
-type NavItemPropsType = {
+interface INavItem {
     page: navItemType
-    setCategory: (category: number) => void
+    setSection: (category: number) => void
 }
-const NavItem:React.FC<NavItemPropsType> = ({page, setCategory}) => {
+const NavItem:React.FC<INavItem> = ({page, setSection}) => {
     return (  
-        <div onClick={() => setCategory(page.id)} className={style.root}>
+        <div onClick={() => setSection(page.id)} className={style.root}>
             <p className={style.name}>{page.name}</p>
             <p className={style.text}>{page.description}</p>
 

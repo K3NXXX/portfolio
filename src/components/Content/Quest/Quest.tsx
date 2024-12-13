@@ -7,7 +7,7 @@ const Quest:React.FC = () => {
         <div className={style.root}>
             <div className={style.content}>
                 <h3 className={style.title}>Active quests</h3>
-                <p className={style.quest__line}>backend skills-up line</p>
+                <p className={style.quest__line}>frontend skills-up line</p>
                 {questsList.map((quest:questsType) => (
                      <QuestItem quest= {quest} />
                 ))}  

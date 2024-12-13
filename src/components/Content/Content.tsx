@@ -7,19 +7,19 @@ import Quest from './Quest/Quest'
 import UserInfo from './UserInfo/UserInfo'
 
 const Content: React.FC = () => {
-	const [category, setCategory] = useState(1)
+	const [section, setSection] = useState(1)
 	return (
 		<div className={styles.root}>
 			<div className={styles.content}>
 				<UserInfo />
 				<div className={styles.category__wrapper}>
-                    {category === 1 && <Beginning />}
-                    {category === 4 && <Projects/>}
+                    {section === 1 && <Beginning />}
+                    {section === 4 && <Projects/>}
 				</div>
 
 				<Quest />
 			</div>
-			<Navigation setCategory={setCategory} />
+			<Navigation setSection={setSection} />
 		</div>
 	)
 }

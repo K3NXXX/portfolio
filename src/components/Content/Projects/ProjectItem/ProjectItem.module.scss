@@ -1,0 +1,50 @@
+.root {
+	.image__wrapper {
+		img {
+			margin-bottom: 10px;
+		
+		}
+		.name {
+			color: rgb(232, 74, 74);
+			font-family: Big Shoulders Display;
+			font-size: 25px;
+			font-weight: 800;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+		.type {
+			color: rgb(255, 255, 255);
+			font-family: Iceland;
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 17px;
+		}
+		.description {
+			color: rgb(122, 122, 122);
+			font-family: Iceland;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.viewProjectBtn {
+			color: rgb(255, 255, 255);
+			font-family: Iceland !important;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 7.5%;
+			text-transform: uppercase;
+			background: transparent;
+			padding: 11px 10px;
+			border: 1px solid rgb(232, 74, 74);
+			transition: 0.3s ease;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			&:hover {
+				background-color: rgb(232, 74, 74);
+			}
+		}
+	}
+}

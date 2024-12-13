@@ -7,14 +7,14 @@ export type questsType = {
 export const questsList: questsType[] = [
     {
         id:1,
-        name: "Learn Node.js",
-        description: "Build fullstack site using Node.js. Make connection with database",
-        rewards: [5,40]
+        name: "Develope dashboard for monitoring business",
+        description: "Build fullstack website for monitoring business using NextJS",
+        rewards: [35,70]
     },
     {
         id:2,
-        name: "Learn MongoDB and SQL",
-        description: "Learn how to use and connect databases",
-        rewards: [10,25]
+        name: "Develope Spotify clone",
+        description: "Implement website for listening music using NextJS",
+        rewards: [30,55]
     }
 ]
