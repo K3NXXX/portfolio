@@ -1,0 +1,77 @@
+.root {
+    margin-bottom: 20px;
+    .quest {
+        color: #FFF;
+        font-family: Iceland;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .quest__name {
+        color: var(--Primary, #E84A4A);
+        font-family: Big Shoulders Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 743;
+        line-height: normal;
+        letter-spacing: 1.35px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .goal{
+        color: #FFF;
+        font-family: Iceland;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .goal__description {
+        color: #7A7A7A;
+        font-family: Iceland;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+    .rewards {
+        color: #FFF;
+        font-family: Iceland;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .rewards__container {
+        display: flex;
+        gap: 0 10px;
+        .reward {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .exp__number {
+                color: #7A7A7A;
+                font-family: Iceland;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.05px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}

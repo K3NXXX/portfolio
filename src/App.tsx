@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./global.scss"
+import Home from "./pages/Portfolio/Portfolio";
+import Intro from './pages/Intro/Intro';
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+const App:React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/intro" element={<Intro/>}/>
+        <Route path="/portfolio" element={<Home/>}/>
+
+      </Routes>
+      
+      
+
+      <div className='gradient'></div>
     </div>
   );
 }
