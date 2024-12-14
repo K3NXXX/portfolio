@@ -20,6 +20,7 @@ const Projects: React.FC = () => {
           centeredSlides={true}
           slidesPerView={3}
           initialSlide={1}
+          loop={true}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -44,7 +45,7 @@ const Projects: React.FC = () => {
                 <div
                   className={styles.background}
                   style={{
-                    backgroundImage: `url(${project.image})`,
+                    backgroundImage: `url(${project.demoImage})`,
                   }}
                 />
                 <ProjectItem project={project} />

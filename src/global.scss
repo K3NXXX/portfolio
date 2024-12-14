@@ -30,6 +30,12 @@ body {
     background-color: #222222; 
 }
 
+.App {
+    max-width: 1830px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .gradient {
     background: radial-gradient(circle at top right, rgba(232, 74, 74, 0.33) 0%, rgba(232, 74, 74, 0.00) 34.83%);
     width: 60%;
@@ -38,4 +44,10 @@ body {
     top: 0;
     right: 0;
     z-index: -5;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
 }
