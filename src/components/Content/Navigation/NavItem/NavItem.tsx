@@ -1,22 +1,19 @@
-import { useDispatch } from 'react-redux'
-import { navItemType } from '../../../../lists/navList'
-import { setNavSection } from '../../../../redux/slices/globalSlice'
+import { Link } from 'react-router-dom'
+import { INavItem } from '../../../../lists/navList'
 import style from './NavItem.module.scss'
 
-interface INavItem {
-	page: navItemType
+interface INavItemProps {
+	page: INavItem
 }
-const NavItem: React.FC<INavItem> = ({ page }) => {
-	const dispatch = useDispatch()
-
+const NavItem: React.FC<INavItemProps> = ({ page }) => {
 	return (
-		<div
-			onClick={() => dispatch(setNavSection(page.id))}
-			className={style.root}
-		>
+		<Link to={page.url}>
+			<div className={style.root}>
 			<p className={style.name}>{page.name}</p>
 			<p className={style.text}>{page.description}</p>
 		</div>
+		</Link>
+	
 	)
 }
 

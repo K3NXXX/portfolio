@@ -1,53 +1,142 @@
-* {padding:0;margin: 0;border: 0;}
-*, *:before, *:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus, :active {outline: none;}
-a:focus, a:active {outline: none;}
-nav, footer, header, aside {display: block;}
-html, body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
-input, button, textarea {font-family: inherit;}
-input::-ms-clear {display: none;}
-button {cursor: pointer;}
-button::-moz-focus-inner {padding: 0;border: 0;}
-a, a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-ul li {list-style: none;}
-img {vertical-align: top;}
-h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit;}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
 /*--------------------*/
 body {
-    background-color: #000003;
-    position: relative;
+	background-color: #000003;
+	position: relative;
 }
 ::-webkit-scrollbar {
-    width: 7px; 
+	width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #E84A4A;
+	background-color: #e84a4a;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #222222; 
+	background-color: #222222;
+}
+body {
+	overflow-x: hidden;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 .App {
-    max-width: 1830px;
-    margin: 0 auto;
-    padding: 0 15px;
+	position: relative; 
+	max-width: 1830px;
+	margin: 0 auto;
+	padding: 0 15px;
+	overflow: visible;
 }
 
-.gradient {
-    background: radial-gradient(circle at top right, rgba(232, 74, 74, 0.33) 0%, rgba(232, 74, 74, 0.00) 34.83%);
-    width: 60%;
-    height: 60%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -5;
+.gradient__right {
+	background: radial-gradient(
+		circle at top right,
+		#e84a4a80 0%,
+		rgba(232, 74, 74, 0) 70%
+	);
+	position: absolute;
+	top: -37%;
+	right: -25%;
+	width: calc(60vw + 200px);
+	height: calc(60vw + 200px);
+	max-width: 1200px;
+	max-height: 1200px;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden; 
+}
+
+.gradient__left {
+    background: radial-gradient(circle, rgba(232,74,74,0.5) 0%, rgba(0,0,0,1) 70%);
+	position: fixed;
+	bottom: -60%;
+	left: -57%;
+	width: calc(60vw + 200px);
+	height: calc(60vw + 200px);
+
+	z-index: -1;
+	pointer-events: none;
+    border-radius: 100%;
 }
 
 .main {
-    display: flex;
-    justify-content: center;
-    gap: 0 15px;
+	display: flex;
+	justify-content: center;
+	gap: 0 15px;
 }

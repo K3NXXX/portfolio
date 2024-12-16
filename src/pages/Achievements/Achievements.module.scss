@@ -1,0 +1,198 @@
+.root {
+	width: 1334px;
+	min-height: 810px;
+	h1 {
+		color: rgb(255, 255, 255);
+		font-family: Iceland;
+		font-size: 25px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 30px 0;
+	}
+	.content {
+		padding: 0 40px;
+		.filters {
+			background: url('../../assets/achievements/filters-bg.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			gap: 0 30px;
+			border-top: 1px solid rgb(232, 74, 74);
+			padding: 10px 15px;
+			.filters__left {
+				p {
+					color: rgb(122, 122, 122);
+					font-family: Iceland;
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 17px;
+					text-transform: uppercase;
+				}
+			}
+			.filters__right {
+				display: flex;
+				gap: 0 30px;
+				align-items: center;
+				div {
+					display: flex;
+					align-items: center;
+					p {
+						color: rgb(232, 74, 74);
+						font-family: Iceland;
+						font-size: 20px;
+						font-weight: 400;
+						line-height: 17px;
+						letter-spacing: 7.5%;
+						text-align: left;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.list {
+			min-height: 474px;
+			padding: 62px 0 30px 0;
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);
+			gap: 30px 16px;
+			.notAchieved {
+				opacity: 0.3;
+			}
+		
+			.common {
+				cursor: pointer;
+				width: 124px;
+				img {
+					border: 1px solid rgb(93, 226, 106);
+					border-bottom: none;
+					padding: 15px;
+					height: 114px;
+					width: 124px;
+				}
+				.type {
+					color: rgb(0, 0, 3);
+					font-family: Iceland;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+					background: rgb(93, 226, 106);
+					text-align: center;
+				}
+				.name {
+					padding-top: 10px;
+					color: rgb(93, 226, 106);
+					font-family: "Iceland";
+					font-size: 18px;
+					letter-spacing: 3px;
+					font-weight: 800;
+					line-height: 17px;
+					text-align: center;
+					text-transform: uppercase;
+					
+				}
+			}
+			.rare {
+				cursor: pointer;
+				width: 124px;
+				img {
+					border: 1px solid rgb(74, 175, 232);
+					border-bottom: none;
+					padding: 15px;
+					height: 114px;
+					width: 124px;
+				}
+				.type {
+					color: rgb(0, 0, 3);
+					font-family: Iceland;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+					background: rgb(74, 175, 232);
+					text-align: center;
+				}
+				.name {
+					padding-top: 10px;
+					color: rgb(74, 175, 232);
+					font-family: "Iceland";
+					font-size: 18px;
+					letter-spacing: 3px;
+					font-weight: 800;
+					line-height: 17px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+			.epic {
+				cursor: pointer;
+				width: 124px;
+				img {
+					border: 1px solid rgb(232, 74, 74);
+					border-bottom: none;
+					padding: 15px;
+					height: 114px;
+					width: 124px;
+				}
+				.type {
+					color: rgb(0, 0, 3);
+					font-family: Iceland;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+					background: rgb(232, 74, 74);
+					text-align: center;
+				}
+				.name {
+					padding-top: 10px;
+					color: rgb(232, 74, 74);
+					font-family: "Iceland";
+					font-size: 18px;
+					letter-spacing: 3px;
+					font-weight: 800;
+					line-height: 17px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+			.legendary {
+				cursor: pointer;
+				width: 124px;
+				img {
+					border: 1px solid rgb(212, 169, 68);
+					border-bottom: none;
+					padding: 15px;
+					height: 114px;
+					width: 124px;
+				}
+				.type {
+					color: rgb(0, 0, 3);
+					font-family: Iceland;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+					background: rgb(212, 169, 68);
+					text-align: center;
+				}
+				.name {
+					padding-top: 10px;
+					color: rgb(212, 169, 68);
+					font-family: "Iceland";
+					font-size: 18px;
+					letter-spacing: 3px;
+					font-weight: 800;
+					line-height: 17px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+			
+		}
+		.pagination{
+			display: flex;
+			justify-content: center;
+			gap: 0 15px;
+		}
+	}
+}

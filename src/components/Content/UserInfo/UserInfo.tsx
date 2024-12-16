@@ -1,6 +1,8 @@
 import style from "./UserInfo.module.scss"
 import avatar from "../../../assets/userInfo/avatar.png"
 import bluetoothIcon from "../../../assets/userInfo/bluetoothIcon.svg"
+import { Link } from 'react-router-dom'
+import { PAGES } from '../../../constants/pages.constants'
 
 const UserInfo:React.FC = () => {
     return (  
@@ -17,7 +19,7 @@ const UserInfo:React.FC = () => {
                 </div>
                 <div className={style.social}>
                     <div className={style.btn__wrapper}>
-                        <button className={style.openSocial}>open connection</button>
+                        <Link to={PAGES.PROJECTS} className={style.openSocial}>open projects</Link>
                         <img className={style.icon} src={bluetoothIcon} alt="bluetooth icon" />
                     </div>
                    

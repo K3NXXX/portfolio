@@ -1,5 +1,8 @@
 .root {
     max-width: 196px;
+    position: relative;
+    overflow: visible; 
+    
     .content {
         min-height: 323px;
         .title {
@@ -30,3 +33,5 @@
         }
     }
 }
+
+
