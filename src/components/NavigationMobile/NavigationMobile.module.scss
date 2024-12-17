@@ -1,0 +1,23 @@
+.root {
+	display: none;
+	@media (max-width:1500px){
+        display: block;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0 20px;
+    }
+	button {
+		color: rgb(0, 0, 0);
+		font-family: 'Big Shoulders Display';
+		font-size: 18px;
+		font-weight: 800;
+		letter-spacing: 7.5%;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 7px 50px;
+		background: rgb(180, 56, 56);
+		width: 100%;
+	}
+}

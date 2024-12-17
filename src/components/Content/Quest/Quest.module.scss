@@ -1,37 +1,37 @@
 .root {
-    max-width: 196px;
-    position: relative;
-    overflow: visible; 
-    
-    .content {
-        min-height: 323px;
-        .title {
-            color: #FFF;
-            font-family: Big Shoulders Display;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 743;
-            line-height: normal;
-            letter-spacing: 1.35px;
-            text-transform: uppercase;
-            padding: 0px 0px 0 10px;
-            background-image: url("../../../assets/quests/linesIcon.png");
-            width: 196px;
-            height: 23px;
-        }
-        .quest__line {
-            color: #7A7A7A;
-            font-family: Iceland;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: uppercase;
-            padding: 8px 30px 8px 10px;
-            background: rgba(232, 74, 74, 0.1);
-            margin-bottom: 15px;
-        }
-    }
+	max-width: 196px;
+	position: relative;
+	overflow: visible;
+	@media (max-width:1100px) {
+        display: none;
+       }
+	.content {
+		min-height: 323px;
+		.title {
+			color: #fff;
+			font-family: Big Shoulders Display;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 743;
+			line-height: normal;
+			letter-spacing: 1.35px;
+			text-transform: uppercase;
+			padding: 0px 0px 0 10px;
+			background-image: url('../../../assets/quests/linesIcon.png');
+			width: 196px;
+			height: 23px;
+		}
+		.quest__line {
+			color: #7a7a7a;
+			font-family: Iceland;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-transform: uppercase;
+			padding: 8px 30px 8px 10px;
+			background: rgba(232, 74, 74, 0.1);
+			margin-bottom: 15px;
+		}
+	}
 }
-
-

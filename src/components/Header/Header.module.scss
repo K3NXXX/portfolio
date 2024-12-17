@@ -3,6 +3,9 @@
     justify-content: space-between;
     padding: 30px 15px;
     align-items: center;
+    @media (max-width:600px) {
+        display: none;
+    }
 }
 .left {
     display: flex;

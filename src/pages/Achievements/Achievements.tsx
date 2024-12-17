@@ -1,6 +1,6 @@
 import { styled } from '@mui/material'
 import Checkbox from '@mui/material/Checkbox'
-import Tooltip from '@mui/material/Tooltip'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import Pagination from '@mui/material/Pagination'
 import React, { useState } from 'react'
 import { achievementsList } from '../../lists/achievementsList'
@@ -29,29 +29,22 @@ const InnerCheckedIcon = styled('div')(() => ({
   margin: '3px',
 }))
 
-const StyledTooltip = styled(Tooltip)(() => ({
-  '.MuiTooltip-tooltip': {
-    backgroundColor: '#333', // Dark background color
-    color: '#f80000', // White text
-    fontSize: '1rem', // Slightly larger font
-    borderRadius: '6px', // Rounded corners
-    padding: '10px 15px', // Padding around the text
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', // Subtle shadow
-    maxWidth: '200px', // Maximum width for tooltip
-    textAlign: 'center', // Centered text
+const StyledTooltip = styled(({ className, ...props }: any) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(() => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: 'rgb(232, 74, 74)',
+    color: 'rgb(255, 255, 255)',
+    fontSize: '1rem',
+    borderRadius: '0px',
+    padding: '10px 15px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+    maxWidth: '200px',
+    textAlign: 'center',
+    lineHeight: "15px"
   },
-  '.MuiTooltip-arrow': {
-    color: '#db0202', // Match the tooltip background color
-  },
-  PopperProps: {
-    modifiers: [
-      {
-        name: 'offset',
-        options: {
-          offset: [0, 10], // You can adjust the positioning here
-        },
-      },
-    ],
+  [`& .${tooltipClasses.arrow}`]: {
+    color: 'rgb(232, 74, 74)', // Колір стрілки
   },
 }));
 
@@ -76,10 +69,20 @@ const CustomPagination = styled(Pagination)(() => ({
 
 const Achievements: React.FC = () => {
   const [page, setPage] = useState(1)
+  const [achievedChecked, setAchievedChecked] = useState(false)
+  const [inProgressChecked, setInProgressChecked] = useState(false)
+
   const itemsPerPage = 18
   const totalPages = Math.ceil(achievementsList.length / itemsPerPage)
 
-  const currentAchievements = achievementsList.slice(
+ 
+  const filteredAchievements = achievementsList.filter((achievement) => {
+    if (achievedChecked && achievement.progress === "achieved") return true
+    if (inProgressChecked && achievement.progress === "notAchieved") return true
+    return !achievedChecked && !inProgressChecked
+  })
+
+  const currentAchievements = filteredAchievements.slice(
     (page - 1) * itemsPerPage,
     page * itemsPerPage
   )
@@ -105,7 +108,9 @@ const Achievements: React.FC = () => {
                     <InnerCheckedIcon />
                   </CheckedIcon>
                 }
-                inputProps={{ 'aria-label': 'controlled' }}
+                checked={achievedChecked}
+                onChange={(e) => setAchievedChecked(e.target.checked)}
+                inputProps={{ 'aria-label': 'achieved' }}
               />
               <p>Achieved</p>
             </div>
@@ -117,24 +122,29 @@ const Achievements: React.FC = () => {
                     <InnerCheckedIcon />
                   </CheckedIcon>
                 }
-                inputProps={{ 'aria-label': 'controlled' }}
-                className={styles.checkbox}
+                checked={inProgressChecked}
+                onChange={(e) => setInProgressChecked(e.target.checked)}
+                inputProps={{ 'aria-label': 'in progress' }}
               />
               <p>In progress</p>
             </div>
           </div>
         </div>
         <ul className={styles.list}>
-          {currentAchievements.map(achievement => (
+          {currentAchievements.map((achievement) => (
             <StyledTooltip
               key={achievement.id}
               title={achievement.description}
-              placement="bottom"
+              placement="top"
               arrow
               className={styles.tooltip}
             >
-              <div className={`${styles[achievement.type]} ${achievement.progress === "notAchieved" ? styles.notAchieved : ""}`}>
-                <img src={achievement.image} alt='achievement' />
+              <div
+                className={`${styles[achievement.type]} ${
+                  achievement.progress === "notAchieved" ? styles.notAchieved : ""
+                }`}
+              >
+                <img src={achievement.image} alt="achievement" />
                 <p className={styles.type}>{achievement.type}</p>
                 <p className={styles.name}>{achievement.name}</p>
               </div>
@@ -152,5 +162,4 @@ const Achievements: React.FC = () => {
     </div>
   )
 }
-
 export default Achievements

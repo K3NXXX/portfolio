@@ -11,6 +11,7 @@ import Intro from './pages/Intro/Intro'
 import Project from './pages/Project/Project'
 import AboutMe from './pages/AboutMe/AboutMe'
 import Achievements from './pages/Achievements/Achievements'
+import NavigationMobile from './components/NavigationMobile/NavigationMobile'
 
 const App: React.FC = () => {
 	const location = useLocation()
@@ -32,6 +33,7 @@ const App: React.FC = () => {
 				{!isIntroPage && <Quest />}
 			</main>
 			{!isIntroPage && <Navigation />}
+			{!isIntroPage && <NavigationMobile />}
 			<div className='gradient__right'></div>
 			<div className='gradient__left'></div>
 		</div>
