@@ -5,14 +5,11 @@
 			display: flex;
 			align-items: center;
 			gap: 0 50px;
-			padding-bottom: 200px;
+			padding-bottom: 100px;
 		}
 		@media (max-width: 700px) {
 			flex-direction: column;
 			align-items: start;
-		}
-		@media (max-width: 500px) {
-			padding-bottom: 0px;
 		}
 		@media (max-width: 450px) {
 			display: block;
@@ -21,11 +18,12 @@
 	.avatar {
 		min-height: 148px;
 		margin-bottom: 20px;
-		@media (max-width: 430px) {
-			width: 160px;
-			height: 100px;
+		@media (max-width: 1100px) {
+			margin-bottom: 0px;
 		}
-		
+		@media (max-width: 700px) {
+			display: none;
+		}
 	}
 	.info {
 		display: flex;
@@ -35,19 +33,43 @@
 		@media (max-width: 1100px) {
 			flex-direction: column;
 		}
+		@media (max-width: 450px) {
+			width: 100%;
+		}
 	}
 	.content {
 		display: flex;
 		flex-direction: column;
+		gap: 20px 0;
+
 		@media (max-width: 1100px) {
 			flex-direction: row;
+			align-items: center;
 			gap: 0 50px;
 		}
-		@media (max-width: 450px) {
+		@media (max-width: 950px) {
 			flex-direction: column;
 			gap: 20px 0;
 		}
-		gap: 20px 0;
+		@media (max-width: 450px) {
+			align-items: start;
+		}
+		.info__wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 10px 0;
+			@media (max-width: 1100px) {
+				flex-direction: row;
+				gap: 0 30px;
+				align-items: center;
+
+				@media (max-width: 450px) {
+					flex-direction: column;
+					gap: 20px 0;
+					width: 100%;
+				}
+			}
+		}
 		span {
 			color: #fff;
 			font-family: Iceland;
@@ -72,7 +94,14 @@
 	}
 	.buttons {
 		cursor: pointer;
-
+		@media (max-width: 1100px) {
+			display: flex;
+			flex-direction: column;
+			gap: 20px 0;
+		}
+		@media (max-width: 450px) {
+			width: 100%;
+		}
 		.btn__wrapper {
 			position: relative;
 			display: flex;
@@ -84,6 +113,9 @@
 			margin-bottom: 22px;
 			border: 1px solid #e84a4a;
 			transition: 0.5s ease;
+			@media (max-width: 1100px) {
+				margin-bottom: 0;
+			}
 			@media (max-width: 450px) {
 				justify-content: space-between;
 				padding: 0 10px;
@@ -112,14 +144,45 @@
 				padding: 5px 0px 5px 7px;
 				transition: 0.5s ease;
 				margin-right: 10px;
-				
 			}
+
 			.openProjects {
 				margin-right: 28px;
 			}
 			.icon {
 				transition: 0.5s ease;
 			}
+		}
+	}
+	.motto {
+		width: 200px;
+		padding-top: 280px;
+		align-self: flex-start;
+
+		@media (max-width: 1500px) {
+			padding-top: 180px;
+		}
+		@media (max-width: 1100px) {
+			padding-top: 0px;
+		}
+		span {
+			color: rgb(232, 74, 74);
+			font-family: Iceland;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 7.5%;
+			text-align: left;
+			text-transform: uppercase;
+			margin-bottom: 6px;
+		}
+		p {
+			color: rgb(178, 183, 186);
+			font-family: Iceland;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 7.5%;
+			text-align: left;
+			text-transform: uppercase;
 		}
 	}
 }

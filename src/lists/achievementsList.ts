@@ -70,22 +70,6 @@ export const achievementsList: IAchievement[] = [
 		type: "rare"
 	},
 	{
-		id: 8,
-		image: rareImage,
-		name: "Next generation",
-		description: "Learn NextJS",
-		progress: "achieved",
-		type: "rare"
-	},
-	{
-		id: 9,
-		image: rareImage,
-		name: "Next generation",
-		description: "Learn NextJS",
-		progress: "achieved",
-		type: "rare"
-	},
-	{
 		id: 10,
 		image: rareImage,
 		name: "Next generation",
