@@ -3,6 +3,9 @@
 	width: 100%;
 	min-height: 810px;
 	border: 1px solid rgba(255, 255, 255, 0.13);
+	@media (max-width: 600px) {
+		margin-top: 30px;
+	}
 	h1 {
 		color: rgb(255, 255, 255);
 		font-family: Iceland;
