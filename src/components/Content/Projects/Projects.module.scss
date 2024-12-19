@@ -1,6 +1,28 @@
 .root {
 	width: 1334px;
 	min-height: 810px;
+	border: 1px solid rgba(255, 255, 255, 0.13);
+	overflow-x: hidden;
+	@media (max-width: 1725px) {
+		width: 100% !important;
+		max-width: 1334px !important;
+		min-height: 810px !important;
+		border: 1px solid rgba(255, 255, 255, 0.13);
+		margin: 0 auto !important;
+	}
+	@media (max-width: 600px) {
+		margin-top: 30px !important;
+		min-height: 700px !important;
+	}
+	@media (max-width: 500px) {
+		min-height: 650px !important;
+	}
+	@media (max-width: 400px) {
+		min-height: 580px !important;
+	}
+	@media (max-width: 380px) {
+		min-height: 550px !important;
+	}
 	h1 {
 		color: rgb(255, 255, 255);
 		font-family: Iceland;
@@ -10,13 +32,41 @@
 		text-transform: uppercase;
 		text-align: center;
 		padding: 30px 0;
+		@media (max-width: 400px) {
+			padding: 30px 0 0 0;
+		}
 	}
+	
 	.carousel {
 		:global {
 			.swiper {
-				width: 1236px;
+				max-width: 1230px;
 				height: 600px;
 				padding: 34px 0;
+				@media (max-width: 1725px) {
+					width: 93% !important;
+					height: auto !important;
+					padding: 34px 0 !important;
+				}
+				@media (max-width: 600px) {
+					height: 546px !important;
+					padding: 54px 0 !important;
+				}
+				@media (max-width: 460px) {
+					height: 500px !important;
+				}
+				@media (max-width: 380px) {
+					height: 470px !important;
+				}
+				
+				
+				
+			}
+			.swiper-wrapper {
+				@media (max-width: 1725px) {
+					padding-bottom: 30px !important;
+				}
+			
 			}
 			.swiper-pagination-bullet {
 				background: #e84a4a !important;
@@ -25,15 +75,28 @@
 				width: 10px !important;
 				height: 10px !important;
 			}
+
 			.swiper-slide {
 				background: url('../../../assets/projects/ui/project-bg.png') !important;
-				width: 410px !important;
-				height: 502px !important;
 				background-repeat: no-repeat !important;
 				background-position: center !important;
 				background-size: contain !important;
 				padding: 20px 15px !important;
 				position: relative;
+				width: 100%;
+				max-width: 410px !important;
+				@media (max-width: 1725px) {
+					height: auto !important;
+				}
+				@media (max-width: 600px) {
+					width: 350px !important;
+				}
+				@media (max-width: 460px) {
+					width: 300px !important;
+				}
+				@media (max-width: 380px) {
+					width: 290px !important;
+				}
 			}
 		}
 		img {

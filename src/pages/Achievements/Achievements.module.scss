@@ -85,6 +85,7 @@
 			}
 		
 			.common {
+				user-select: none;
 				cursor: pointer;
 				width: 124px;
 				height: 176px;
@@ -118,6 +119,7 @@
 				}
 			}
 			.rare {
+				user-select: none;
 				cursor: pointer;
 				width: 124px;
 				height: 176px;
@@ -150,6 +152,7 @@
 				}
 			}
 			.epic {
+				user-select: none;
 				cursor: pointer;
 				width: 124px;
 				height: 176px;
@@ -182,6 +185,7 @@
 				}
 			}
 			.legendary {
+				user-select: none;
 				cursor: pointer;
 				width: 124px;
 				height: 176px;

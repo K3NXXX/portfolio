@@ -30,6 +30,14 @@ const Projects: React.FC = () => {
 					}}
 					pagination={true}
 					modules={[EffectCoverflow, Pagination]}
+					breakpoints={{
+						1500: {
+							slidesPerView: 3,
+						},
+						0: {
+							slidesPerView: 'auto', 
+						},
+					}}
 					className='mySwiper'
 				>
 					<ul className={styles.projects__list}>
