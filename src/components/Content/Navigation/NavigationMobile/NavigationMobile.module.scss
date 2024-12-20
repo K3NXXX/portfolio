@@ -8,16 +8,17 @@
 		bottom: 0;
 		padding: 0 20px;
 		z-index: 100;
+		
     }
 	button {
-		color: rgb(0, 0, 0);
+		color: rgb(255, 255, 255);
 		font-family: 'Big Shoulders Display';
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 800;
-		letter-spacing: 7.5%;
+		letter-spacing: 2px;
 		text-align: center;
 		text-transform: uppercase;
-		padding: 7px 50px;
+		padding: 10px 50px;
 		background: rgb(180, 56, 56);
 		width: 100%;
 	}

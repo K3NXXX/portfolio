@@ -26,7 +26,6 @@ const Header:React.FC = () => {
                 <span className={style.number}>4,738</span>
                     <span className={style.text}>coins awarded</span>
                 </div>
-
             </div>
             <div className={style.right}>
                 <div className={style.time}>

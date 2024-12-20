@@ -1,3 +1,6 @@
+// * {
+//     outline: 1px solid red;
+// }
 .root {
 	user-select: none;
 	.image__wrapper {
@@ -64,7 +67,9 @@
 			padding: 11px 10px;
 			border: 1px solid rgb(232, 74, 74);
 			transition: 0.3s ease;
-			position: absolute;
+			position: absolute; /* або absolute */
+			z-index: 1000; /* Вищий за інші елементи */
+			pointer-events: auto; /* Дозволяє взаємодію */
 			right: 20px;
 			bottom: 20px;
 			&:hover {
