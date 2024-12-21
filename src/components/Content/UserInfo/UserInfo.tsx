@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom'
 import avatar from '../../../assets/userInfo/avatar.png'
 import { PAGES } from '../../../constants/pages.constants'
 import style from './UserInfo.module.scss'
+import Contacts from '../Contacts/Contacts'
+import { useState } from 'react'
 
 const UserInfo: React.FC = () => {
+	const [openContacts, setOpenContacts] = useState(false)
+	const handleClose = () => setOpenContacts(false)
 	return (
 		<aside className={style.root}>
 			<div className={style.wrapper}>
@@ -24,7 +28,7 @@ const UserInfo: React.FC = () => {
 					</div>
 
 					<div className={style.buttons}>
-						<div className={style.btn__wrapper}>
+						<div onClick={() => setOpenContacts(true)} className={style.btn__wrapper}>
 							<button className={style.openSocial}>Open connection</button>
 							<IoIosBluetooth
 								className={style.icon}
@@ -49,6 +53,7 @@ const UserInfo: React.FC = () => {
 					</div>
 				</div>
 			</div>
+			{openContacts && <Contacts handleClose={handleClose}/>}
 		</aside>
 	)
 }

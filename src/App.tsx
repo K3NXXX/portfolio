@@ -19,7 +19,7 @@ const App: React.FC = () => {
 	const isIntroPage = location.pathname === PAGES.INTRO
 
 	useEffect(() => {
-		window.scrollTo(0, 0)
+		document.body.scrollTop = 0
 	}, [location])
 
 	return (
@@ -27,6 +27,7 @@ const App: React.FC = () => {
 			{!isIntroPage && <Header />}
 			<main className='main'>
 				{!isIntroPage && <UserInfo />}
+				
 				<Routes>
 					<Route path={PAGES.INTRO} element={<Intro />} />
 					<Route path={PAGES.BEGINNING} element={<Beginning />} />
