@@ -48,12 +48,8 @@ const App: React.FC = () => {
 			</main>
 			{!isIntroPage && !isNotFoundPage && <Navigation />}
 			{!isIntroPage && !isNotFoundPage && <NavigationMobile />}
-			{!isIntroPage && !isNotFoundPage && (
-				<>
-					<div className='gradient__right'></div>
-					<div className='gradient__left'></div>
-				</>
-			)}
+			<div className='gradient__right'></div>
+			<div className='gradient__left'></div>
 		</div>
 	)
 }

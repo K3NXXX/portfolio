@@ -5,6 +5,7 @@ import Pagination from '@mui/material/Pagination'
 import React, { useState } from 'react'
 import { achievementsList } from '../../lists/achievementsList'
 import styles from './Achievements.module.scss'
+import { motion } from 'motion/react'
 
 const UncheckedIcon = styled('div')(() => ({
   width: '24px',
@@ -44,7 +45,7 @@ const StyledTooltip = styled(({ className, ...props }: any) => (
     lineHeight: "15px"
   },
   [`& .${tooltipClasses.arrow}`]: {
-    color: 'rgb(232, 74, 74)', // Колір стрілки
+    color: 'rgb(232, 74, 74)', 
   },
 }));
 
@@ -92,7 +93,21 @@ const Achievements: React.FC = () => {
   }
 
   return (
-    <div className={styles.root}>
+    <motion.div
+    className={styles.root}
+    initial={{
+      opacity: 0,
+      y: -50,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+              duration: 0.7,
+      ease: 'easeOut',
+    }}
+  >
       <h1>Achievements</h1>
       <div className={styles.content}>
         <div className={styles.filters}>
@@ -159,7 +174,7 @@ const Achievements: React.FC = () => {
           className={styles.pagination}
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
 export default Achievements

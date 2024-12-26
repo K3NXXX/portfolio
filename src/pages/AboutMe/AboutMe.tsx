@@ -1,10 +1,25 @@
 import React from 'react'
 import aboutMe from '../../assets/about-me/about.png'
 import styles from './AboutMe.module.scss'
+import { motion } from 'motion/react'
 
 const AboutMe: React.FC = () => {
 	return (
-		<div className={styles.root}>
+		<motion.div
+		className={styles.root}
+		initial={{
+		  opacity: 0,
+		  y: -50,
+		}}
+		animate={{
+		  opacity: 1,
+		  y: 0,
+		}}
+		transition={{
+				  duration: 0.7,
+		  ease: 'easeOut',
+		}}
+	  >
 			<h1>Who is Volodya Andrushevskyi</h1>
 			<div className={styles.content}>
 				<div className={styles.left}>
@@ -44,7 +59,7 @@ const AboutMe: React.FC = () => {
 					<img src={aboutMe} alt='about me' />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

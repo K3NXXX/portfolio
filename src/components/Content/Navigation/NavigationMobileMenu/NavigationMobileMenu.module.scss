@@ -136,3 +136,30 @@
 		}
 	}
 }
+.gradient {
+	background: radial-gradient(
+		circle,
+		rgba(232, 74, 74, 0.5) 0%,
+		rgba(0, 0, 0, 1) 70%
+	);
+	position: fixed;
+	bottom: -60%;
+	left: -57%;
+	width: calc(60vw + 200px);
+	height: calc(60vw + 200px);
+	z-index: -1;
+	pointer-events: none;
+	border-radius: 100%;
+	@media (max-width: 900px) {
+		bottom: -50%;
+		left: -47%;
+	}
+	@media (max-width: 600px) {
+		bottom: -40%;
+		left: -60%;
+	}
+	@media (max-width: 450px) {
+		bottom: -40%;
+		left: -55%;
+	}
+}

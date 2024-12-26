@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import styles from './Projects.module.scss'
-
+import { motion } from 'motion/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -11,7 +11,21 @@ import ProjectItem from './ProjectItem/ProjectItem'
 
 const Projects: React.FC = () => {
 	return (
-		<div className={styles.root}>
+		<motion.div
+			className={styles.root}
+			initial={{
+				opacity: 0,
+				y: -50,
+			}}
+			animate={{
+				opacity: 1,
+				y: 0,
+			}}
+			transition={{
+				duration: 0.7,
+				ease: 'easeOut',
+			}}
+		>
 			<h1>Projects</h1>
 			<div className={styles.carousel}>
 				<Swiper
@@ -62,7 +76,7 @@ const Projects: React.FC = () => {
 					</ul>
 				</Swiper>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
