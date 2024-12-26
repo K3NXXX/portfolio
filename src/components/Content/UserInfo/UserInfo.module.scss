@@ -131,13 +131,13 @@
 				}
 				.openSocial,
 				.openProjects {
-					color: white;
+					color: white !important;
 					@media (max-width: 1024px) {
 						color:#e84a4a;
 					}
 				}
 				.icon {
-					color: white;
+					color: white !important;
 					@media (max-width: 1024px) {
 						color:#e84a4a;
 					}
