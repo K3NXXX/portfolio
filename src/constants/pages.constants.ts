@@ -6,6 +6,7 @@ class Pages {
 	PROJECTS = `${this.BASE_URL}/projects`
 	ABOUT_ME = `${this.BASE_URL}/about-me`
 	ACHIEVEMENTS = `${this.BASE_URL}/achievements`
+	NOT_FOUND = "*"
 }
 
 export const PAGES = new Pages()

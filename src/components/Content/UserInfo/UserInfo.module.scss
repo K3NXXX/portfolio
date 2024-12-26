@@ -123,19 +123,29 @@
 				padding: 0 10px;
 			}
 
+
 			&:hover {
 				background-color: #e84a4a;
+				@media (max-width: 1024px) {
+					background-color: transparent;
+				}
 				.openSocial,
 				.openProjects {
 					color: white;
+					@media (max-width: 1024px) {
+						color:#e84a4a;
+					}
 				}
 				.icon {
-					color: white !important;
+					color: white;
+					@media (max-width: 1024px) {
+						color:#e84a4a;
+					}
 				}
 			}
 			.openSocial,
 			.openProjects {
-				color: var(--Primary, #e84a4a);
+				color:#e84a4a;
 				font-family: Big Shoulders Display;
 				font-size: 18px;
 				font-style: normal;

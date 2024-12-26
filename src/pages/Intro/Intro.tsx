@@ -3,7 +3,7 @@ import style from "./Intro.module.scss"
 import {Link} from "react-router-dom"
 const Intro:React.FC = () => {
     return (  
-        <section className={style.root}>
+        <div className={style.root}>
             <div className={style.content}>
                 <div className={style.content__left}>
                     <p>HI!</p>
@@ -16,7 +16,7 @@ const Intro:React.FC = () => {
 
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
  
