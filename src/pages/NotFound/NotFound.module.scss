@@ -16,7 +16,7 @@
             p {
                 color: var(--Primary, #E84A4A);
                 font-family: Big Shoulders Display;
-                font-size: 538px;
+                font-size: 444px;
                 font-style: normal;
                 font-weight: 743;
                 line-height: normal;
@@ -28,6 +28,9 @@
                 }
                 @media (max-width:700px) {
                     font-size: 300px;
+                }
+                @media (max-width:600px) {
+                    font-size: 200px;
                 }
                 @media (max-width:400px) {
                     font-size: 200px;
@@ -73,8 +76,10 @@
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
                 margin-bottom: 70px;
+                width: 380px;
                 @media (max-width:400px) {
-                    font-size: 16px;
+                    font-size: 18px;
+                    width: 300px;
                 }
             }
             .btn {

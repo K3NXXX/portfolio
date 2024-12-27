@@ -1,13 +1,13 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import styles from './Projects.module.scss'
 import { motion } from 'motion/react'
+import React from 'react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { projectsList } from '../../../lists/projectsList'
 import ProjectItem from './ProjectItem/ProjectItem'
+import styles from './Projects.module.scss'
 
 const Projects: React.FC = () => {
 	return (
@@ -15,14 +15,14 @@ const Projects: React.FC = () => {
 			className={styles.root}
 			initial={{
 				opacity: 0,
-				y: -50,
+				filter: 'blur(10px)',
 			}}
 			animate={{
 				opacity: 1,
-				y: 0,
+				filter: 'blur(0px)',
 			}}
 			transition={{
-				duration: 0.7,
+				duration: 0.8,
 				ease: 'easeOut',
 			}}
 		>
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
 							slidesPerView: 3,
 						},
 						0: {
-							slidesPerView: 'auto', 
+							slidesPerView: 'auto',
 						},
 					}}
 					className='mySwiper'

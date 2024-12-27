@@ -12,3 +12,17 @@
     }
     
 }
+
+.left, .right {
+	display: flex;
+    gap: 0 50px;
+
+}
+
+.left {
+	align-items: flex-start;
+}
+
+.right {
+	align-items: flex-end;
+}
