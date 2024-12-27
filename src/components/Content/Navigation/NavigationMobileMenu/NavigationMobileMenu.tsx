@@ -1,8 +1,8 @@
-import 'animate.css'
 import React, { useState } from 'react'
-import { IoMdClose } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { INavItem, navList } from '../../../../lists/navList'
+import { IoMdClose } from 'react-icons/io'
+import 'animate.css'
 import styles from './NavigationMobileMenu.module.scss'
 
 interface INavigationMobileMenuProps {
@@ -56,7 +56,7 @@ const NavigationMobileMenu: React.FC<INavigationMobileMenuProps> = ({
 					</ul>
 				</div>
 			</div>
-      <div className={styles.gradient}></div>
+			<div className={styles.gradient}></div>
 		</div>
 	)
 }

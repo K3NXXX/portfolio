@@ -1,9 +1,10 @@
-import { motion } from 'motion/react'
-import { questsList, questsType } from '../../../lists/questsList'
-import styles from './Quest.module.scss'
 import QuestItem from './QuestItem/QuestItem'
+import { questsList, questsType } from '../../../lists/questsList'
+import { motion } from 'motion/react'
+import styles from './Quest.module.scss'
 
 const Quest: React.FC = () => {
+	
 	return (
 		<motion.div
 			initial={{ x: '100%', scale: 0.6, opacity: 0 }}

@@ -1,10 +1,10 @@
-import NavItem from './NavItem/NavItem'
-import { INavItem, navList } from '../../../lists/navList'
 import { motion } from 'framer-motion'
+import { INavItem, navList } from '../../../lists/navList'
 import style from './Navigation.module.scss'
+import NavItem from './NavItem/NavItem'
 
 const Navigation: React.FC = () => {
-	const leftItems = navList.slice(0, 2) 
+	const leftItems = navList.slice(0, 2)
 	const rightItems = navList.slice(2)
 
 	return (
@@ -13,11 +13,11 @@ const Navigation: React.FC = () => {
 				{leftItems.map((page: INavItem, index: number) => (
 					<motion.div
 						key={page.id}
-						initial={{ opacity: 0, x: -50 }} 
+						initial={{ opacity: 0, x: -50 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{
 							duration: 0.7,
-							delay: index * 0.2, 
+							delay: index * 0.2,
 							ease: 'easeOut',
 						}}
 					>

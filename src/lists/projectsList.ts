@@ -65,7 +65,7 @@ export const projectsList: IProject[] = [
 		frontendTechnologies: 'React, SCSS, TypeScript, React Query, Firebase, MUI',
 		backendTechnologies: 'None',
 		fullImage: fullrojectImage3,
-		websiteUrl: "https://k3nxxx.github.io/techland-shop/",
+		websiteUrl: 'https://k3nxxx.github.io/techland-shop/',
 		gitHubRepoUrl: 'https://github.com/K3NXXX/techland-shop',
 	},
 	{
@@ -73,13 +73,12 @@ export const projectsList: IProject[] = [
 		name: 'GPT-3 Static Layout',
 		type: 'React',
 		shortDescription: 'Website with static layout',
-		fullDescription:
-			'Website with static layout where you can enjoy the UI',
+		fullDescription: 'Website with static layout where you can enjoy the UI',
 		demoImage: demoProjectImage4,
 		frontendTechnologies: 'React, SCSS',
 		backendTechnologies: 'None',
 		fullImage: fullrojectImage4,
-		websiteUrl: "https://k3nxxx.github.io/GPT-3/",
+		websiteUrl: 'https://k3nxxx.github.io/GPT-3/',
 		gitHubRepoUrl: 'https://github.com/K3NXXX/GPT-3',
 	},
 ]

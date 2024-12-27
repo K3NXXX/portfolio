@@ -1,90 +1,89 @@
 .root {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 15px;
-    align-items: center;
-    @media (max-width:600px) {
-        display: none;
-    }
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 15px;
+	align-items: center;
+	@media (max-width: 600px) {
+		display: none;
+	}
 }
 .left {
-    display: flex;
-    gap: 0 50px;
+	display: flex;
+	gap: 0 50px;
 }
 .level {
-    display: flex;
-    gap: 0 5px;
-    align-items: center;
-    .number {
-        color: #7DFF68;
-        font-family: Big Shoulders Display;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 743;
-        line-height: normal;
-        letter-spacing: 1.95px;
-        text-transform: uppercase;
-    }
-    .text {
-        color: #FFF;
-        font-family: Big Shoulders Display;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 743;
-        line-height: normal;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-    }
+	display: flex;
+	gap: 0 5px;
+	align-items: center;
+	.number {
+		color: #7dff68;
+		font-family: Big Shoulders Display;
+		font-size: 26px;
+		font-style: normal;
+		font-weight: 743;
+		line-height: normal;
+		letter-spacing: 1.95px;
+		text-transform: uppercase;
+	}
+	.text {
+		color: #fff;
+		font-family: Big Shoulders Display;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 743;
+		line-height: normal;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+	}
 }
 .coins {
-    display: flex;
-    gap: 0 5px;
-    align-items: center;
-   .number {
-        color: #7DFF68;
-        font-family: Big Shoulders Display;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 743;
-        line-height: normal;
-        letter-spacing: 1.95px;
-        text-transform: uppercase;
-   }
-   .text {
-    color: #FFF;
-    font-family: Big Shoulders Display;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 743;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-   }
+	display: flex;
+	gap: 0 5px;
+	align-items: center;
+	.number {
+		color: #7dff68;
+		font-family: Big Shoulders Display;
+		font-size: 26px;
+		font-style: normal;
+		font-weight: 743;
+		line-height: normal;
+		letter-spacing: 1.95px;
+		text-transform: uppercase;
+	}
+	.text {
+		color: #fff;
+		font-family: Big Shoulders Display;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 743;
+		line-height: normal;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+	}
 }
 .right {
-  
-    .time {
-        display: flex;
-        gap: 0 5px;
-        .text {
-            color: #7A7A7A;
-            font-family: Iceland;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.05px;
-            text-transform: uppercase;
-        }
-        .number {
-            color: #FFF;
-            font-family: Iceland;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.05px;
-            text-transform: uppercase;
-        }
-    }
+	.time {
+		display: flex;
+		gap: 0 5px;
+		.text {
+			color: #7a7a7a;
+			font-family: Iceland;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1.05px;
+			text-transform: uppercase;
+		}
+		.number {
+			color: #fff;
+			font-family: Iceland;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1.05px;
+			text-transform: uppercase;
+		}
+	}
 }

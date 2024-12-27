@@ -36,7 +36,7 @@
 			padding: 30px 0 0 0;
 		}
 	}
-	
+
 	.carousel {
 		:global {
 			.swiper {
@@ -58,15 +58,11 @@
 				@media (max-width: 380px) {
 					height: 470px !important;
 				}
-				
-				
-				
 			}
 			.swiper-wrapper {
 				@media (max-width: 1725px) {
 					padding-bottom: 30px !important;
 				}
-			
 			}
 			.swiper-pagination-bullet {
 				background: #e84a4a !important;
@@ -118,6 +114,6 @@
 		filter: blur(4px);
 		z-index: -1 !important;
 		opacity: 0.2;
-		 pointer-events: none;
+		pointer-events: none;
 	}
 }

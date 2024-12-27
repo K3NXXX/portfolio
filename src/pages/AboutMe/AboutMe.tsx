@@ -1,5 +1,5 @@
-import { motion } from 'motion/react'
 import React from 'react'
+import { motion } from 'motion/react'
 import aboutMe from '../../assets/about-me/about.png'
 import styles from './AboutMe.module.scss'
 

@@ -4,9 +4,8 @@
 	border: 1px solid rgba(255, 255, 255, 0.13);
 	overflow-x: hidden;
 	@media (max-width: 1100px) {
-	margin: 0 auto;
-	width: 100%;
-
+		margin: 0 auto;
+		width: 100%;
 	}
 	@media (max-width: 600px) {
 		margin-top: 30px;
@@ -29,16 +28,16 @@
 		@media (max-width: 500px) {
 			padding: 0 15px;
 		}
-		
-		@media (max-width:1800px) {
+
+		@media (max-width: 1800px) {
 			grid-template-columns: 331px 820px;
 			justify-content: center;
 		}
-		@media (max-width:1700px) {
+		@media (max-width: 1700px) {
 			grid-template-columns: 1fr;
 			padding-bottom: 200px;
 		}
-		@media (max-width:1000px) {
+		@media (max-width: 1000px) {
 			padding-bottom: 50px;
 		}
 	}
@@ -61,10 +60,10 @@
 				background-position: center;
 				padding: 5px 0 5px 5px;
 				margin-bottom: 8px;
-				@media (max-width:1800px) {
+				@media (max-width: 1800px) {
 					font-size: 20px;
 				}
-				@media (max-width:1700px) {
+				@media (max-width: 1700px) {
 					background: rgb(201, 59, 59);
 					margin-bottom: 15px;
 				}
@@ -130,10 +129,10 @@
 		img {
 			width: 850px;
 			border: 1px solid rgba(255, 255, 255, 0.13);
-			@media (max-width:1800px) {
+			@media (max-width: 1800px) {
 				width: 800px;
 			}
-			@media (max-width:1700px) {
+			@media (max-width: 1700px) {
 				display: block;
 				width: 100%;
 			}
@@ -144,18 +143,16 @@
 			margin-top: 20px;
 			align-items: center;
 			user-select: none;
-			@media (max-width:1400px) {
+			@media (max-width: 1400px) {
 				display: flex;
 				flex-direction: column-reverse;
 				align-items: start;
 				gap: 20px 0;
-
-				
 			}
 			.btns__wrapper {
 				display: flex;
 				gap: 0 25px;
-				@media (max-width:420px) {
+				@media (max-width: 420px) {
 					flex-direction: column;
 					gap: 20px 0;
 					width: 100%;
@@ -176,10 +173,9 @@
 				transition: 0.3s ease;
 				&:hover {
 					background-color: rgb(232, 74, 74);
-					@media (max-width:1024px) {
+					@media (max-width: 1024px) {
 						background-color: transparent;
 					}
-					
 				}
 			}
 			.full__description {
@@ -189,12 +185,11 @@
 				font-weight: 400;
 				text-transform: uppercase;
 				width: 448px;
-				@media (max-width:1800px) {
+				@media (max-width: 1800px) {
 					width: 400px;
 				}
-				@media (max-width:1700px) {
+				@media (max-width: 1700px) {
 					width: 100%;
-					
 				}
 			}
 		}

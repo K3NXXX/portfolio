@@ -92,7 +92,7 @@
 			text-transform: uppercase;
 		}
 	}
-	
+
 	.buttons {
 		user-select: none;
 		cursor: pointer;
@@ -123,7 +123,6 @@
 				padding: 0 10px;
 			}
 
-
 			&:hover {
 				background-color: #e84a4a;
 				@media (max-width: 1024px) {
@@ -133,19 +132,19 @@
 				.openProjects {
 					color: white !important;
 					@media (max-width: 1024px) {
-						color:#e84a4a;
+						color: #e84a4a;
 					}
 				}
 				.icon {
 					color: white !important;
 					@media (max-width: 1024px) {
-						color:#e84a4a;
+						color: #e84a4a;
 					}
 				}
 			}
 			.openSocial,
 			.openProjects {
-				color:#e84a4a;
+				color: #e84a4a;
 				font-family: Big Shoulders Display;
 				font-size: 18px;
 				font-style: normal;
@@ -170,7 +169,7 @@
 		width: 200px;
 		align-self: flex-start;
 		@media (max-width: 700px) {
-			width: 100%
+			width: 100%;
 		}
 		span {
 			color: rgb(232, 74, 74);

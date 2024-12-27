@@ -1,15 +1,14 @@
 .root {
 	display: none;
-	@media (max-width:1500px){
-        display: block;
+	@media (max-width: 1500px) {
+		display: block;
 		position: fixed;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		padding: 0 20px;
 		z-index: 100;
-		
-    }
+	}
 	button {
 		color: rgb(255, 255, 255);
 		font-family: 'Big Shoulders Display';

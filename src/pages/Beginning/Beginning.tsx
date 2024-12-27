@@ -1,10 +1,10 @@
 import { motion } from 'motion/react'
-import style from './Beginning.module.scss'
+import styles from './Beginning.module.scss'
 
 const Beginning: React.FC = () => {
 	return (
 		<motion.div
-			className={style.root}
+			className={styles.root}
 			initial={{
 				opacity: 0,
 				y: -50,
@@ -14,11 +14,11 @@ const Beginning: React.FC = () => {
 				y: 0,
 			}}
 			transition={{
-                duration: 0.7,
+				duration: 0.7,
 				ease: 'easeOut',
 			}}
 		>
-			<p className={style.text}>
+			<p className={styles.text}>
 				Navigating an endless web of interconnected devices and servers,
 				bringing delight and wonder to users worldwide
 			</p>

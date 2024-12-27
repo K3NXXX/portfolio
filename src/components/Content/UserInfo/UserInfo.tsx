@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import avatar from '../../../assets/userInfo/avatar.png'
 import { PAGES } from '../../../constants/pages.constants'
 import Contacts from '../Contacts/Contacts'
-import style from './UserInfo.module.scss'
+import styles from './UserInfo.module.scss'
 
 const UserInfo: React.FC = () => {
 	const [openContacts, setOpenContacts] = useState(false)
@@ -21,54 +21,34 @@ const UserInfo: React.FC = () => {
 				ease: 'easeOut',
 				delay: 0.3,
 			}}
-			className={style.root}
+			className={styles.root}
 		>
-			<div className={style.wrapper}>
+			<div className={styles.wrapper}>
 				<motion.img
-					className={style.avatar}
+					className={styles.avatar}
 					src={avatar}
-					alt="avatar"
+					alt='avatar'
 					whileHover={{ rotateY: 360 }}
 					transition={{ duration: 0.5, ease: 'easeInOut' }}
 					initial={{ scale: 0.5 }}
 					animate={{ scale: 1 }}
 				/>
 
-				<div className={style.content}>
-					<div className={style.info__wrapper}>
-						<div className={style.info}>
-							<motion.div
-								whileHover={{ scale: 1.1 }}
-								initial={{ opacity: 0, x: -40, rotate: -20 }}
-								animate={{ opacity: 1, x: 0, rotate: 0 }}
-								transition={{
-									duration: 1.2,
-									ease: 'easeOut',
-									delay: 0.6,
-								}}
-								className={style.name}
-							>
+				<div className={styles.content}>
+					<div className={styles.info__wrapper}>
+						<div className={styles.info}>
+							<div className={styles.name}>
 								<span>Name</span>
 								<p>Volodya Andrushevskyi</p>
-							</motion.div>
+							</div>
 
-							<motion.div
-								whileHover={{ scale: 1.1 }}
-								initial={{ opacity: 0, x: -40, rotate: -20 }}
-								animate={{ opacity: 1, x: 0, rotate: 0 }}
-								transition={{
-									duration: 1.2,
-									ease: 'easeOut',
-									delay: 0.7,
-								}}
-								className={style.occupation}
-							>
+							<div className={styles.occupation}>
 								<span>Occupation</span>
 								<p>Web developer</p>
-							</motion.div>
+							</div>
 						</div>
 
-						<div className={style.buttons}>
+						<div className={styles.buttons}>
 							<motion.div
 								initial={{ opacity: 0, y: 50, rotate: -20 }}
 								animate={{ opacity: 1, y: 0, rotate: 0 }}
@@ -78,10 +58,14 @@ const UserInfo: React.FC = () => {
 									delay: 0.9,
 								}}
 								onClick={() => setOpenContacts(true)}
-								className={style.btn__wrapper}
+								className={styles.btn__wrapper}
 							>
-								<button className={style.openSocial}>Open connection</button>
-								<IoIosBluetooth className={style.icon} size={25} color="#e84a4a" />
+								<button className={styles.openSocial}>Open connection</button>
+								<IoIosBluetooth
+									className={styles.icon}
+									size={25}
+									color='#e84a4a'
+								/>
 							</motion.div>
 
 							<motion.div
@@ -93,12 +77,12 @@ const UserInfo: React.FC = () => {
 									delay: 1.2,
 								}}
 							>
-								<Link to={PAGES.PROJECTS} className={style.btn__wrapper}>
-									<button className={style.openProjects}>Open projects</button>
+								<Link to={PAGES.PROJECTS} className={styles.btn__wrapper}>
+									<button className={styles.openProjects}>Open projects</button>
 									<RiDashboardHorizontalLine
-										className={style.icon}
+										className={styles.icon}
 										size={25}
-										color="#e84a4a"
+										color='#e84a4a'
 									/>
 								</Link>
 							</motion.div>
@@ -114,7 +98,7 @@ const UserInfo: React.FC = () => {
 							ease: 'easeOut',
 							delay: 1.5,
 						}}
-						className={style.motto}
+						className={styles.motto}
 					>
 						<span>Motto:</span>
 						<p>Turning Ideas into Interactive Realities</p>

@@ -1,23 +1,28 @@
+import { Link } from 'react-router-dom'
 import { PAGES } from '../../constants/pages.constants'
-import style from "./Intro.module.scss"
-import {Link} from "react-router-dom"
-const Intro:React.FC = () => {
-    return (  
-        <div className={style.root}>
-            <div className={style.content}>
-                <div className={style.content__left}>
-                    <p>HI!</p>
-                </div>
-                <div className={style.content__right}>
-                    <p className={style.welcome}>Welcome to my portfolio.</p>
-                    <p className={style.text1}>Warning!</p>
-                    <p className={style.text2}>You will find ‘achievements’ or ‘quests’ that show the progress in my professional life and are related to what I am working on.</p>
-                    <Link className={style.btn} to={PAGES.BEGINNING}>enter the system</Link>
+import styles from './Intro.module.scss'
 
-                </div>
-            </div>
-        </div>
-    );
+const Intro: React.FC = () => {
+	return (
+		<div className={styles.root}>
+			<div className={styles.content}>
+				<div className={styles.content__left}>
+					<p>HI!</p>
+				</div>
+				<div className={styles.content__right}>
+					<p className={styles.welcome}>Welcome to my portfolio.</p>
+					<p className={styles.text1}>Warning!</p>
+					<p className={styles.text2}>
+						You will find ‘achievements’ or ‘quests’ that show the progress in
+						my professional life and are related to what I am working on.
+					</p>
+					<Link className={styles.btn} to={PAGES.BEGINNING}>
+						enter the system
+					</Link>
+				</div>
+			</div>
+		</div>
+	)
 }
- 
-export default Intro;
+
+export default Intro

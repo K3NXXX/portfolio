@@ -1,6 +1,6 @@
-import { motion } from 'motion/react'
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { motion } from 'motion/react'
 import { IProject, projectsList } from '../../lists/projectsList'
 import styles from './Project.module.scss'
 
@@ -27,7 +27,7 @@ const Project: React.FC = () => {
 			}}
 			transition={{
 				duration: 0.8,
-				ease: [0.25, 0.46, 0.45, 0.94], // Плавний "spring"-ефект
+				ease: [0.25, 0.46, 0.45, 0.94], 
 			}}
 		>
 			<h1>Project</h1>

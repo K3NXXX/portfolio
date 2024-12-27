@@ -1,106 +1,105 @@
 .root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 15px;
-    .content {
-        display: flex;
-        align-items: center;
-        gap: 0 85px;
-        @media (max-width:1100px) {
-            flex-direction: column;
-            gap: 0 0;
-        }
-        .content__left{
-            p {
-                color: var(--Primary, #E84A4A);
-                font-family: Big Shoulders Display;
-                font-size: 444px;
-                font-style: normal;
-                font-weight: 743;
-                line-height: normal;
-                letter-spacing: -32.28px;
-                text-transform: uppercase;
-                @media (max-width:1100px) {
-                    font-size: 400px;
-                    letter-spacing: 0px;
-                }
-                @media (max-width:700px) {
-                    font-size: 300px;
-                }
-                @media (max-width:600px) {
-                    font-size: 200px;
-                }
-                @media (max-width:400px) {
-                    font-size: 200px;
-                }
-            }
-        }
-        .content__right {
-            max-width: 600px;
-            padding-right: 15px;
-            @media (max-width:1100px) {
-                text-align: center;
-                padding-right: 0;
-            }
-            .welcome {
-                color: #FFF;
-                font-family: Iceland;
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 1.95px;
-                text-transform: uppercase;
-                margin-bottom: 45px;
-            }
-            .text1 {
-                color: #FFF;
-                font-family: Iceland;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 130%; 
-                letter-spacing: 1.5px;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-            }
-            .text2 {
-                color: #FFF;
-                font-family: Iceland;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 130%; 
-                letter-spacing: 1.5px;
-                text-transform: uppercase;
-                margin-bottom: 70px;
-                width: 380px;
-                @media (max-width:400px) {
-                    font-size: 18px;
-                    width: 300px;
-                }
-            }
-            .btn {
-                color: var(--Primary, #E84A4A);
-                font-family: Big Shoulders Display;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 743;
-                line-height: normal;
-                letter-spacing: 1.65px;
-                text-transform: uppercase;
-                border: 1px solid var(--Primary, #E84A4A);
-                padding: 15px 50px;
-                transition-duration: 0.5s;
-                &:hover {
-                    background-color: #E84A4A;
-                    color:#000003;
-                    transition: 0.5s ease all;
-                }
-                
-            }
-        }
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0 15px;
+	.content {
+		display: flex;
+		align-items: center;
+		gap: 0 85px;
+		@media (max-width: 1100px) {
+			flex-direction: column;
+			gap: 0 0;
+		}
+		.content__left {
+			p {
+				color: var(--Primary, #e84a4a);
+				font-family: Big Shoulders Display;
+				font-size: 444px;
+				font-style: normal;
+				font-weight: 743;
+				line-height: normal;
+				letter-spacing: -32.28px;
+				text-transform: uppercase;
+				@media (max-width: 1100px) {
+					font-size: 400px;
+					letter-spacing: 0px;
+				}
+				@media (max-width: 700px) {
+					font-size: 300px;
+				}
+				@media (max-width: 600px) {
+					font-size: 200px;
+				}
+				@media (max-width: 400px) {
+					font-size: 200px;
+				}
+			}
+		}
+		.content__right {
+			max-width: 600px;
+			padding-right: 15px;
+			@media (max-width: 1100px) {
+				text-align: center;
+				padding-right: 0;
+			}
+			.welcome {
+				color: #fff;
+				font-family: Iceland;
+				font-size: 26px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 1.95px;
+				text-transform: uppercase;
+				margin-bottom: 45px;
+			}
+			.text1 {
+				color: #fff;
+				font-family: Iceland;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			.text2 {
+				color: #fff;
+				font-family: Iceland;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				margin-bottom: 70px;
+				width: 380px;
+				@media (max-width: 400px) {
+					font-size: 18px;
+					width: 300px;
+				}
+			}
+			.btn {
+				color: var(--Primary, #e84a4a);
+				font-family: Big Shoulders Display;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 743;
+				line-height: normal;
+				letter-spacing: 1.65px;
+				text-transform: uppercase;
+				border: 1px solid var(--Primary, #e84a4a);
+				padding: 15px 50px;
+				transition-duration: 0.5s;
+				&:hover {
+					background-color: #e84a4a;
+					color: #000003;
+					transition: 0.5s ease all;
+				}
+			}
+		}
+	}
 }

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import style from './Header.module.scss'
+import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
 	const [currentTime, setCurrentTime] = useState<string>('')
@@ -29,9 +29,9 @@ const Header: React.FC = () => {
 				type: 'spring',
 				stiffness: 100,
 			}}
-			className={style.root}
+			className={styles.root}
 		>
-			<div className={style.left}>
+			<div className={styles.left}>
 				<motion.div
 					initial={{ opacity: 0, y: -70, rotateX: -60, scale: 0.8 }}
 					animate={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
@@ -42,10 +42,10 @@ const Header: React.FC = () => {
 						type: 'spring',
 						stiffness: 120,
 					}}
-					className={style.level}
+					className={styles.level}
 				>
-					<span className={style.number}>37</span>
-					<span className={style.text}>level</span>
+					<span className={styles.number}>37</span>
+					<span className={styles.text}>level</span>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0, y: -70, rotateX: -60, scale: 0.8 }}
@@ -57,13 +57,13 @@ const Header: React.FC = () => {
 						type: 'spring',
 						stiffness: 120,
 					}}
-					className={style.coins}
+					className={styles.coins}
 				>
-					<span className={style.number}>4,738</span>
-					<span className={style.text}>coins awarded</span>
+					<span className={styles.number}>4,738</span>
+					<span className={styles.text}>coins awarded</span>
 				</motion.div>
 			</div>
-			<div className={style.right}>
+			<div className={styles.right}>
 				<motion.div
 					initial={{ opacity: 0, y: 70, rotateX: 60, scale: 0.8 }}
 					animate={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
@@ -74,10 +74,10 @@ const Header: React.FC = () => {
 						type: 'spring',
 						stiffness: 120,
 					}}
-					className={style.time}
+					className={styles.time}
 				>
-					<p className={style.text}>Time:</p>
-					<p className={style.number}>{currentTime}</p>
+					<p className={styles.text}>Time:</p>
+					<p className={styles.number}>{currentTime}</p>
 				</motion.div>
 			</div>
 		</motion.header>

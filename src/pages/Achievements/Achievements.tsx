@@ -1,10 +1,10 @@
-import { styled } from '@mui/material'
-import Checkbox from '@mui/material/Checkbox'
-import Pagination from '@mui/material/Pagination'
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-import { motion } from 'motion/react'
 import React, { useState } from 'react'
 import { achievementsList } from '../../lists/achievementsList'
+import { motion } from 'motion/react'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
+import Checkbox from '@mui/material/Checkbox'
+import Pagination from '@mui/material/Pagination'
+import { styled } from '@mui/material'
 import styles from './Achievements.module.scss'
 
 const UncheckedIcon = styled('div')(() => ({
@@ -61,8 +61,13 @@ const CustomPagination = styled(Pagination)(() => ({
 		color: '#fff',
 		borderRadius: '0',
 	},
+	'& .MuiPaginationItem-root.Mui-selected:hover': {
+		backgroundColor: '#610707',
+		color: '#fff',
+		borderRadius: '0',
+	},
 	'& .MuiPaginationItem-root:hover': {
-		backgroundColor: 'rgba(232, 74, 74, 0.1)',
+		backgroundColor: 'rgba(232, 74, 74, 0.1) ',
 		borderRadius: '0',
 	},
 }))
@@ -94,21 +99,21 @@ const Achievements: React.FC = () => {
 	}
 
 	return (
-    <motion.div
-    className={styles.root}
-    initial={{
-      opacity: 0,
-      y: -50,
-    }}
-    animate={{
-      opacity: 1,
-      y: 0,
-    }}
-    transition={{
-              duration: 0.7,
-      ease: 'easeOut',
-    }}
-  >
+		<motion.div
+			className={styles.root}
+			initial={{
+				opacity: 0,
+				y: -50,
+			}}
+			animate={{
+				opacity: 1,
+				y: 0,
+			}}
+			transition={{
+				duration: 0.7,
+				ease: 'easeOut',
+			}}
+		>
 			<h1>Achievements</h1>
 			<div className={styles.content}>
 				<div className={styles.filters}>

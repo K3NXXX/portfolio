@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
+import { questsType } from '../../../../lists/questsList'
 import rewardIcon1 from '../../../../assets/quests/reward1.png'
 import rewardIcon2 from '../../../../assets/quests/reward2.png'
-import { questsType } from '../../../../lists/questsList'
 import style from './QuestItem.module.scss'
 
 type QuestItemPropsType = {

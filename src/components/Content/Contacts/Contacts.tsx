@@ -1,8 +1,8 @@
-import 'animate.css'
 import React, { useRef, useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
-import { useOnClickOutside } from 'usehooks-ts'
 import { contactsList } from '../../../lists/contactsList'
+import { useOnClickOutside } from 'usehooks-ts'
+import 'animate.css'
 import styles from './Contacts.module.scss'
 
 interface IContactsProps {
@@ -13,13 +13,11 @@ const Contacts: React.FC<IContactsProps> = ({ handleClose }) => {
 	const [animation, setAnimation] = useState('animate__fadeInUp')
 	const ref = useRef(null)
 
-	
-
 	const onClose = () => {
 		setAnimation('animate__fadeOutDown')
 		setTimeout(() => {
 			handleClose()
-		  }, 500); 
+		}, 500)
 	}
 
 	useOnClickOutside(ref, onClose)

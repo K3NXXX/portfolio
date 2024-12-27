@@ -9,11 +9,10 @@ const NavItem: React.FC<INavItemProps> = ({ page }) => {
 	return (
 		<Link to={page.url}>
 			<div className={style.root}>
-			<p className={style.name}>{page.name}</p>
-			<p className={style.text}>{page.description}</p>
-		</div>
+				<p className={style.name}>{page.name}</p>
+				<p className={style.text}>{page.description}</p>
+			</div>
 		</Link>
-	
 	)
 }
 

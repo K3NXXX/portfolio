@@ -1,12 +1,12 @@
-import { motion } from 'motion/react'
 import React from 'react'
+import ProjectItem from './ProjectItem/ProjectItem'
+import { projectsList } from '../../../lists/projectsList'
+import { motion } from 'motion/react'
+import { EffectCoverflow, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
-import { EffectCoverflow, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { projectsList } from '../../../lists/projectsList'
-import ProjectItem from './ProjectItem/ProjectItem'
 import styles from './Projects.module.scss'
 
 const Projects: React.FC = () => {
